@@ -8,12 +8,10 @@ class MyException(Exception):
         self.message = message
         super().__init__(self.message)
 
-# Class with various data members and member functions
 class MyOperations:
     def __init__(self, filename):
         self.filename = filename
 
-    # File operations
     def read_file(self):
         try:
             with open(self.filename, 'r') as file:
@@ -25,14 +23,12 @@ class MyOperations:
         with open(self.filename, 'w') as file:
             file.write(content)
 
-    # Mathematical operations
     def square_root(self, num):
         return math.sqrt(num)
 
     def factorial(self, num):
         return math.factorial(num)
 
-    # String operations
     def split_string(self, string, delimiter):
         return string.split(delimiter)
 
