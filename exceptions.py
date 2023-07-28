@@ -1,2 +1,0 @@
-class InvalidOptionError(Exception):
-    pass
